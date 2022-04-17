@@ -1,7 +1,7 @@
 # CH01. Probability Theory
 
 Created: 2022년 4월 10일 오후 10:11
-Last Edited Time: 2022년 4월 12일 오후 9:44
+Last Edited Time: 2022년 4월 17일 오후 5:18
 Type: IT
 
 # Contents
@@ -81,7 +81,7 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 > The Event $A \bigcap B$ is the **intersection** of the events A and B consists of the outcomes that are contained within both events A and B. The probability of this event, $P(A\cap B)$, is the probability that both events A and B occur simultaneously.
 > 
 
-$P(A \cap B) + P(A \cap B') = P(A)$$P(A \cap B) + P(A \bigcap B') = P(A)$
+$P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
 
 - **Mutually Exclusive Events** ( 공통점이 없는 경우 )
 
@@ -113,7 +113,11 @@ $방법1)\ P(A\cup B) = P(A\cap B') + P(A'\cap B) + P(A\cap B$)
     
     $방법2)\ P(A\cup B) = P(A) + P(B) - P(A\cap B)$
     
-    > If the events A and B are **mutually exclusive** so that $P(A\cap B) = 0,$  then $\\ P(A\cup B) = P(A) + P(B)$
+    > If the events A and B are **mutually exclusive** so that
+    
+     $P(A\cap B) = 0,$  then 
+    
+    $\\ P(A\cup B) = P(A) + P(B)$
     > 
     
     $\ cf) (A\cup B)' = A'\cap B'$
@@ -132,12 +136,14 @@ $방법1)\ P(A\cup B) = P(A\cap B') + P(A'\cap B) + P(A\cap B$)
 - **Union of Mutually Exclusive Events**
 
 > For a sequence $A_1, A_2, ..., A_n$ of **mutually exclusive events**, the probability of the **union** of the events is given by
+
 $P(A_1 \cup .\ .\ . \cup A_n) = P(A_1)\ + .\ .\ .\ + P(A_n)$
 > 
 
 - **Sample Space Partitions**
 
 > A partition of a sample space is a sequence $A_1, A_2, ..., A_n$ of $mutually\ exclusive\$ events for which
+
 1)$\ A_1 \cup\ .\ .\ .\ \cup\ A_n = S$
 2) Each outcome in the sample is then contained within one and only one of the events$\  A_i$
 > 
@@ -147,7 +153,9 @@ $P(A_1 \cup .\ .\ . \cup A_n) = P(A_1)\ + .\ .\ .\ + P(A_n)$
 - **Conditional Probability **important****
 
 > The conditional probability of event A conditional on event B is
+
 $P(A|B) = \frac{P(A\ \cap\ B)}{P(B)}$
+
 for P(B) > 0. It measures the probability that event A occurs when it is known that
 event B occurs.
 > 
@@ -162,7 +170,9 @@ event B occurs.
 - **Probabilities of Event Intersections**
 
 > The  probability of the **intersection of a series of events** 
-$A_1,\  ...\ , A_n$  can be calculated from the expression$\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
+$A_1,\  ...\ , A_n$  can be calculated from the expression
+
+$\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
 > 
 
 → 전개해보면 $P(A_1\ \cap .\ .\ .\ \cap A_n)$ 으로 되는 것을 알 수 있다.
@@ -198,6 +208,7 @@ Any one of these three conditions implies the other two. The interpretation(해�
 
 > The probability of the intersection of series of **independent events** 
 $A_1,\ ...\ , A_n$ is simply given by
+
 $P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
 > 
 
@@ -206,7 +217,10 @@ $P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
 - **Law of Total Probability**
 
 > If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the probability of an event B can be 
-obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula$\\P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
+obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
+> 
+> 
+> $\\P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
 > 
 
 ## 1.6.2 Calculation of Posterior Probabilities
@@ -214,6 +228,7 @@ obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula$\\P(B)
 - **Bayes’ Theorem  **important** 많이 나오는 개념**
 
 > If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the **posterior probabilities** of the events $A_i$  conditional on an event B can be obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
+
 $P(A_i | B) = \frac{P(A_i)\ P(B|A_i)}{\sum\nolimits_{j=1}^n P(A_j)P(B|A_j)}$
 > 
 
