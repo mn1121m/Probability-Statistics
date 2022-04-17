@@ -1,7 +1,7 @@
 # CH01. Probability Theory
 
 Created: 2022년 4월 10일 오후 10:11
-Last Edited Time: 2022년 4월 17일 오후 5:18
+Last Edited Time: 2022년 4월 17일 오후 5:33
 Type: IT
 
 # Contents
@@ -33,7 +33,7 @@ Type: IT
 
 A set of probability values ofr an experiment with a sample space 
 
-$S = \left\{\ O_1, O_2, ... , O_n  \right\}$  consist of some probabilities
+$S = \left\{\ O_1, O_2, ... , O_n \right\}$  consist of some probabilities
 
 $P_1, P_2, ... , P_n$
 
@@ -80,8 +80,10 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 
 > The Event $A \bigcap B$ is the **intersection** of the events A and B consists of the outcomes that are contained within both events A and B. The probability of this event, $P(A\cap B)$, is the probability that both events A and B occur simultaneously.
 > 
-
-$P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
+> 
+> 
+> $P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
+> 
 
 - **Mutually Exclusive Events** ( 공통점이 없는 경우 )
 
@@ -171,8 +173,9 @@ event B occurs.
 
 > The  probability of the **intersection of a series of events** 
 $A_1,\  ...\ , A_n$  can be calculated from the expression
-
-$\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
+> 
+> 
+> $\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
 > 
 
 → 전개해보면 $P(A_1\ \cap .\ .\ .\ \cap A_n)$ 으로 되는 것을 알 수 있다.
@@ -182,7 +185,9 @@ $\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\
 - **Independent Events  $\ne$ mutually exclusive**
 
 > Two events A and B are said to be **independent events** if
+
 $P(A|B)\ = P(A),\ P(B|A)\ = P(B)\ and\ P(A\ \cap\ B) = P(A)\ P(B)$
+
 Any one of these three conditions implies the other two. The interpretation(해석) of two events being independent is that knowledge about one event does not affect the probability of the other event. (**한 사건에 대한 지식이 다른 사건의 확률에 영향을 미치지 않는다는 것이**다)
 > 
 
@@ -208,8 +213,9 @@ Any one of these three conditions implies the other two. The interpretation(해�
 
 > The probability of the intersection of series of **independent events** 
 $A_1,\ ...\ , A_n$ is simply given by
-
-$P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
+> 
+> 
+> $P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
 > 
 
 ## 1.6.1 Law of Total Probability
@@ -220,7 +226,8 @@ $P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
 obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
 > 
 > 
-> $\\P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
+> 
+> $P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
 > 
 
 ## 1.6.2 Calculation of Posterior Probabilities
@@ -228,8 +235,8 @@ obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
 - **Bayes’ Theorem  **important** 많이 나오는 개념**
 
 > If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the **posterior probabilities** of the events $A_i$  conditional on an event B can be obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
+> 
 
 $P(A_i | B) = \frac{P(A_i)\ P(B|A_i)}{\sum\nolimits_{j=1}^n P(A_j)P(B|A_j)}$
-> 
 
 ⇒ $P(A_i| B) = \frac{P(A_i \cap B)}{P(B)} = \frac{P(A_i)P(B|A_i)}{P(B)}$
