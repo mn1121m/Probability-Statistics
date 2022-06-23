@@ -121,7 +121,7 @@ The probability that the randome variable lies between two values is obtained by
     <img width="400" alt="CH02-PS-symmetric_random_variable" src="https://user-images.githubusercontent.com/83820185/175249574-7108f15f-ef0d-4684-ba48-0614ae7e7cb0.png">
 
 
-- ***중요* A random variables as a function** $g(X)$
+- <중요> **A random variables as a function** $g(X)$
     - $E(g(X)) = \sum_{i} p_{i} g(x_{i})$ for a **discrete random variable** as a function → $p_{i}$ 는 고정
     - $E(g(X)) = \int_{state space} f(x)g(x) dx$ for a **continuous random variable** as a function → $f(x)$는 고정
     - $g(X) = X^{2}, E(g(X)) = E(X^{2})$
@@ -198,7 +198,7 @@ The probability that the randome variable lies between two values is obtained by
     
     $P( X = x_{i}, Y = y_{j} ) = p_{ij} ≥ 0$
     
-      satisfying    $\sum_{i} \sum_{j} p_{ij} = 1$
+    satisfying    $\sum_{i} \sum_{j} p_{ij} = 1$
     
     If the random variables are **continuous**, then the **joint probability density function (p.d.f)** is a function
     
