@@ -29,7 +29,7 @@
 
 **The Probability mass function(p.m.f)** of a random variable $X$ is set of probability values $p_i$ assigned to each of the value $x_i$ taken by the $discrete$ random variable.
 
-These probability values must satisfy $0 ≤ p_i ≤ 1$  and $\Sigma_{i} p_i = 1$ . 
+These probability values must satisfy $0 ≤ p_i ≤ 1$  and $\sum_{i} p_i = 1$ . 
 
 The probability that $P(X = x_i) = p_i$
 
@@ -116,14 +116,14 @@ The probability that the randome variable lies between two values is obtained by
 
 - **Symmetric Random Variables**
     
-    If a continuous random variable $X$ has a probability density funtion f(x) that is symmetric about a point $$ $\mu$ so that $f(\mu + x) = f(\mu - x)$ for all $x \in \R$ , then $E(X) = \mu$, so that the expectation of the random variable is equal to the point of symmetry.
+    If a continuous random variable $X$ has a probability density funtion f(x) that is symmetric about a point $$ $\mu$ so that $f(\mu + x) = f(\mu - x)$ for all $x \in R $ , then $E(X) = \mu$, so that the expectation of the random variable is equal to the point of symmetry.
     
     <img width="400" alt="CH02-PS-symmetric_random_variable" src="https://user-images.githubusercontent.com/83820185/175249574-7108f15f-ef0d-4684-ba48-0614ae7e7cb0.png">
 
 
 - <중요> **A random variables as a function** $g(X)$
     - $E(g(X)) = \sum_{i} p_{i} g(x_{i})$ for a **discrete random variable** as a function → $p_{i}$ 는 고정
-    - $E(g(X)) = \int_{state space} f(x)g(x) dx$ for a **continuous random variable** as a function → $f(x)$는 고정
+    - $E(g(X)) = \int_{state\ space} f(x)g(x) dx$ for a **continuous random variable** as a function → $f(x)$는 고정
     - $g(X) = X^{2}, E(g(X)) = E(X^{2})$
 
 ---
@@ -230,7 +230,7 @@ The probability that the randome variable lies between two values is obtained by
     
     The **conditional distribution** of a random variable X conditional on a random variable Y taking a particular value summarizes the probabilistic properties of the random variable X under the knowledge provided by the value of Y. It consists of the probability values
        $p_{i | Y = y_{j}} = P( X = x_{i} Y = y_{j} ) = \frac{P( X = x_{i}, Y = y_{j})}{P( Y = y_{j})} 
-       \frac{p_{ij}}{p_{+j}}$
+    = \frac{p_{ij}}{p_{+j}}$
     for discrete random variables or the probability density function
       $f_{X| Y = y} (x) = \frac{f(x, y)}{f_{Y}(y)}$
     for continuous random variables, where $f_{Y}(y)$ is the **marginal distribution** of the random variable $Y$.
