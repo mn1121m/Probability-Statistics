@@ -1,8 +1,6 @@
 # CH01. Probability Theory
 
-Created: 2022년 4월 10일 오후 10:11
-Last Edited Time: 2022년 4월 27일 오후 5:12
-Type: IT
+---
 
 ## Contents
 
@@ -61,8 +59,7 @@ Ex) $O_1 = 1\ P_1 = 1/6$ (1 ~ 6중에 1이 나올 확률)
 
 - **Events → P(A)**
 
-> An event A is a subset of the sample space S. it collects outcomes of particular interest. The probability of an event A, P(A), is obtained by summing the probabilities of the outcomes contained within the event A.
-> 
+An event A is a subset of the sample space S. it collects outcomes of particular interest. The probability of an event A, P(A), is obtained by summing the probabilities of the outcomes contained within the event A.
 
 An events is said to occur if one of the outcomes contained within the event occurs
 
@@ -70,11 +67,9 @@ An events is said to occur if one of the outcomes contained within the event occ
 
 - **Complements of Events (여집합) → P(A’)**
 
-> The event A’, the **complement** of an event A, is the event consisting  of everything in the sample space S that is not contained within the event A. In all cases
-> 
-> 
-> $P(A) + P(A’) = 1$
-> 
+The event A’, the **complement** of an event A, is the event consisting  of everything in the sample space S that is not contained within the event A. In all cases
+
+$P(A) + P(A’) = 1$
 
 Events that consist of an individual outcomes are sometimes referred to as **elementary events** or **simple events**
 
@@ -84,17 +79,13 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 
 - **Intersections of Events**
 
-> The Event $A \bigcap B$ is the **intersection** of the events A and B consists of the outcomes that are contained within both events A and B. The probability of this event, $P(A\cap B)$, is the probability that both events A and B occur simultaneously.
-> 
-> 
-> 
-> $P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
-> 
+The Event $A \bigcap B$ is the **intersection** of the events A and B consists of the outcomes that are contained within both events A and B. The probability of this event, $P(A\cap B)$, is the probability that both events A and B occur simultaneously.
+
+$P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
 
 - **Mutually Exclusive Events** ( 공통점이 없는 경우 )
 
-> Two events A and B are said to be mutually exclusive if $A \cap B = \emptyset$ so that they have no outcomes in common.
-> 
+Two events A and B are said to be mutually exclusive if $A \cap B = \emptyset$ so that they have no outcomes in common.
 
  동시에 발생할 수 없다 ⇒ 상호 배타적이다.
 
@@ -102,11 +93,9 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 
 - **Some other simple results concerning the intersections**
 
-> $A \cap B = B \cap A\\ A\cap S = A\\ A \cap A' = \emptyset$
-> 
+$A \cap B = B \cap A\\ A\cap S = A\\ A \cap A' = \emptyset$
 
-> $A \cap A = A\\ A\cap \emptyset = \emptyset\\ A \cap (B \cap C) = (A \cap B) \cap C)$
-> 
+$A \cap A = A\\ A\cap \emptyset = \emptyset\\ A \cap (B \cap C) = (A \cap B) \cap C)$
 
 ---
 
@@ -114,8 +103,7 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 
 - **Unions of Events (합집합**)
 
-> The event $A \cup B$ is the union of events A and B and consists of the outcomes that are contained within at least one of the events A and B. The probability of this events, $P(A\cup B),$ is the probability that at least one of the events A and B occurs.
-> 
+The event $A \cup B$ is the union of events A and B and consists of the outcomes that are contained within at least one of the events A and B. The probability of this events, $P(A\cup B),$ is the probability that at least one of the events A and B occurs.
 
 $방법1)\ P(A\cup B) = P(A\cap B') + P(A'\cap B) + P(A\cap B$)
 
@@ -123,12 +111,11 @@ $방법1)\ P(A\cup B) = P(A\cap B') + P(A'\cap B) + P(A\cap B$)
     
     $방법2)\ P(A\cup B) = P(A) + P(B) - P(A\cap B)$
     
-    > If the events A and B are **mutually exclusive** so that
+    If the events A and B are **mutually exclusive** so that
     
      $P(A\cap B) = 0,$  then 
     
     $\\ P(A\cup B) = P(A) + P(B)$
-    > 
     
     $\ cf) (A\cup B)' = A'\cap B'$
     
@@ -139,26 +126,22 @@ $방법1)\ P(A\cup B) = P(A\cap B') + P(A'\cap B) + P(A\cap B$)
 
 - **Union of Three Events**
 
-> The probability of the **union of three evnets** A, B and C is the sum of the probability values of the simple outcomes that are contained within at least one of the three events. It can also be calculated from the expression
-> 
-> 
-> $P(A\cup B\cup C) = [P(A)\ + P(B)\ + P(C)] \\ - [P(A\cap B) + P(A\cap C) + P(B\cap C)] + P(A\cap B\cap C)$ 
-> 
+The probability of the **union of three evnets** A, B and C is the sum of the probability values of the simple outcomes that are contained within at least one of the three events. It can also be calculated from the expression
+
+$P(A\cup B\cup C) = [P(A)\ + P(B)\ + P(C)] \\ - [P(A\cap B) + P(A\cap C) + P(B\cap C)] + P(A\cap B\cap C)$ 
 
 - **Union of Mutually Exclusive Events**
 
-> For a sequence $A_1, A_2, ..., A_n$ of **mutually exclusive events**, the probability of the **union** of the events is given by
+For a sequence $A_1, A_2, ..., A_n$ of **mutually exclusive events**, the probability of the **union** of the events is given by
 
 $P(A_1 \cup .\ .\ . \cup A_n) = P(A_1)\ + .\ .\ .\ + P(A_n)$
-> 
 
 - **Sample Space Partitions**
 
-> A partition of a sample space is a sequence $A_1, A_2, ..., A_n$ of $mutually\ exclusive\$ events for which
+A partition of a sample space is a sequence $A_1, A_2, ..., A_n$ of $mutually\ exclusive\$ events for which
 
 (1) $\ A_1 \cup\ .\ .\ .\ \cup\ A_n = S$
 (2) Each outcome in the sample is then contained within one and only one of the events $A_i$
-> 
 
 ---
 
@@ -166,20 +149,12 @@ $P(A_1 \cup .\ .\ . \cup A_n) = P(A_1)\ + .\ .\ .\ + P(A_n)$
 
 - **Conditional Probability **important****
 
-> The conditional probability of event A conditional on event B is
+The conditional probability of event A conditional on event B is
 
 $P(A|B) = \frac{P(A\ \cap\ B)}{P(B)}$
 
 for P(B) > 0. It measures the probability that event A occurs when it is known that
 event B occurs.
-> 
-
----
-
-## 1.4.2 Examples of Conditional Probabilities
-
-- Ex. Power Plant Operation
-- Ex. GAMES OF CHANCE
 
 ---
 
@@ -187,12 +162,10 @@ event B occurs.
 
 - **Probabilities of Event Intersections**
 
-> The  probability of the **intersection of a series of events** 
+The  probability of the **intersection of a series of events** 
 $A_1,\  ...\ , A_n$  can be calculated from the expression
-> 
-> 
-> $\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
-> 
+
+$\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
 
 → 전개해보면 $P(A_1\ \cap .\ .\ .\ \cap A_n)$ 으로 되는 것을 알 수 있다.
 
@@ -202,12 +175,11 @@ $A_1,\  ...\ , A_n$  can be calculated from the expression
 
 - **Independent Events  $\ne$ mutually exclusive**
 
-> Two events A and B are said to be **independent events** if
+Two events A and B are said to be **independent events** if
 
 $P(A|B)\ = P(A),\ P(B|A)\ = P(B)\ and\ P(A\ \cap\ B) = P(A)\ P(B)$
 
 Any one of these three conditions implies the other two. The interpretation(해석) of two events being independent is that knowledge about one event does not affect the probability of the other event. (**한 사건에 대한 지식이 다른 사건의 확률에 영향을 미치지 않는다는 것이**다)
-> 
 
 <aside>
 ✔️ **예를 들어**, 만약 우리는 동전을 두 번 뒤집습니다. 첫 번째는 앞면이 보일 수 있지만,
@@ -232,12 +204,10 @@ Any one of these three conditions implies the other two. The interpretation(해�
 
 - **Intersections of Independent Events**
 
-> The probability of the intersection of series of **independent events** 
+The probability of the intersection of series of **independent events** 
 $A_1,\ ...\ , A_n$ is simply given by
-> 
-> 
-> $P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
-> 
+
+$P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ P(A_2)\ .\ .\ .\ P(A_n)$
 
 ---
 
@@ -245,13 +215,10 @@ $A_1,\ ...\ , A_n$ is simply given by
 
 - **Law of Total Probability**
 
-> If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the probability of an event B can be 
+If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the probability of an event B can be 
 obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
-> 
-> 
-> 
-> $P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
-> 
+
+$P(B) = P(A_1)\ P(B|A|_1) + .\ .\ .\ + P(A_n)\ P(B|A_n) => P(B\cap A_i)$
 
 ---
 
@@ -259,8 +226,7 @@ obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
 
 - **Bayes’ Theorem  **important** 많이 나오는 개념**
 
-> If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the **posterior probabilities** of the events $A_i$  conditional on an event B can be obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
-> 
+If $A_1,\ ...\ , A_n$ is a partition of a sample space, then the **posterior probabilities** of the events $A_i$  conditional on an event B can be obtained from the probabilities $P(A_i)$ and $P(B|A_i)$ using the formula
 
 $P(A_i | B) = \frac{P(A_i)\ P(B|A_i)}{\sum\nolimits_{j=1}^n P(A_j)P(B|A_j)}$
 
