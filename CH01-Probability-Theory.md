@@ -2,6 +2,7 @@
 
 ---
 
+
 ## Contents
 
 - 1.1 Probabilities
@@ -35,7 +36,7 @@
 
 A set of probability values ofr an experiment with a sample space 
 
-$S = \left\{\ O_1, O_2, ... , O_n \right\}$  consist of some probabilities
+$S = \{\ O_1, O_2, ... , O_n \}$  consist of some probabilities
 
 $P_1, P_2, ... , P_n$
 
@@ -81,7 +82,8 @@ Events that consist of an individual outcomes are sometimes referred to as **ele
 
 The Event $A \bigcap B$ is the **intersection** of the events A and B consists of the outcomes that are contained within both events A and B. The probability of this event, $P(A\cap B)$, is the probability that both events A and B occur simultaneously.
 
-$P(A \cap B) + P(A \cap B') = P(A)\\P(A \cap B) + P(A \cap B') = P(A)$
+$P(A \cap B) + P(A \cap B') = P(A)
+\\ P(A \cap B) + P(A' \cap B) = P(B)$
 
 - **Mutually Exclusive Events** ( 공통점이 없는 경우 )
 
@@ -165,7 +167,7 @@ event B occurs.
 The  probability of the **intersection of a series of events** 
 $A_1,\  ...\ , A_n$  can be calculated from the expression
 
-$\\P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
+$P(A_1\ \cap .\ .\ .\ \cap A_n) = P(A_1)\ \times P(A_2|A_1)\ \times P(A_3|A_1\ \cap\ A_2)\ \times .\ .\ .\ \times P(A_n|A_1\ \cap\ .\ .\ .\ A_{n-1})$
 
 → 전개해보면 $P(A_1\ \cap .\ .\ .\ \cap A_n)$ 으로 되는 것을 알 수 있다.
 
